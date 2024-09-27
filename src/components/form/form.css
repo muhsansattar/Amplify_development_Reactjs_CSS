@@ -1,0 +1,106 @@
+.form-container{
+  margin-top: 150px;
+}
+.form-container h2{
+  text-align: center;
+  font-family: Lato;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-align: justified;
+  color: var(--white-color);
+}
+.form-container p{
+  text-align: center;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  text-align: justified;
+  color: var( --p-after-heading-color)
+}
+.contact-form {
+    max-width: 1012px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:transparent;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    flex: 1;
+    margin-right: 10px;
+    background-color: var(--dark-bold-gray-color);
+    color: var( --dark-gray-color);
+    border: none;
+  }  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: var(--dark-bold-gray-color);
+    outline: none;
+    color: var( --dark-gray-color);
+    border: none;
+    border-radius: 8px;
+  }
+  .form-control::placeholder{
+    color: var( --dark-gray-color);
+  }
+  .form-control:focus {
+    background-color:transparent;
+    border:none;
+    outline: none;
+    color: var( --dark-gray-color);
+  }
+  
+  textarea.form-control {
+    height: 100px;
+  }
+  
+  .submit-button {
+  width: 127px;
+  height: 48px;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--dark-gray-color);
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--dark-gray-color);
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  align-self: center;
+  margin: 1.5rem;
+  }
+  #contct{
+    margin-top: 150px;
+  }
+@media(max-width:768px){
+  .form-container{
+    margin-top: 39px;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  .form-group{
+    margin-top: 1rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,111 @@
+.navbar-container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+    margin-top: 57px;
+    padding: 0 80px;
+}
+
+.navbar-container nav ul {
+    display: flex;
+    gap: 24px;
+}
+
+.navbar-container nav ul li {
+    list-style: none;
+}
+
+.navbar-container nav ul a {
+    color: var(--dark-gray-color);
+    font-family: Lato;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.navbar-container nav ul a:hover {
+    color: var(--light-orange-color);
+}
+
+.navbar-container nav a img {
+    width: 250px;
+    height: 60px;
+}
+
+@media (max-width: 1020px) {
+    .navbar-container nav ul a {
+        font-size: 16px;
+    }
+    .navbar-container nav {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar-container nav ul a {
+        font-size: 16px;
+    }
+    .navbar-container nav {
+        padding: 20px;
+        flex-direction: column;
+    }
+}
+
+.toggle-button {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+/* Media query for toggle button */
+@media (max-width: 545px) {
+    .navbar-container nav{
+        top: 19px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 229px;
+    }
+    .navbar-container nav ul {
+        display: none;
+        flex-direction: column;
+        width:152px;
+        height: 327px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: var(--toggle-button-color);
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+    .navbar-container nav ul.active {
+        display: flex;
+    }
+    .navbar-container nav ul li{
+        Size:16px;
+        line-height:19.2px;
+        letter-spacing:3%;
+    }
+    .toggle-button {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .navbar-container nav a img {
+        Width:115.42px;
+        Height:28.37px;
+        position:absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .toggle-button i{
+        Width:38px;
+        Height:29px;
+        Border:7px;
+        z-index: 999;
+        color: var(--light-orange-color);
+    }
+}

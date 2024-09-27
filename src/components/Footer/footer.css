@@ -1,0 +1,122 @@
+
+.footer{
+    background-color: var( --dark-bold-gray-color);
+    margin: 150px 0 0 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.footer-container{
+    padding: 40px 81.5px 24px 81.5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.footer-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-top img{
+    width: 200px;
+    height: 49.17px;
+}
+.footer-top nav ul{
+    margin-top: 50px;
+    display: flex;
+}
+.footer-top nav li{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: justified;
+    margin: 0 20px;
+    color: var(--dark-gray-color);
+    list-style: none;
+}
+.footer-center{
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.footer-email{
+    margin: 0 40px;
+}
+.footer-email, .footer-call{
+    display: flex;
+}
+.footer-email span img, .footer-call span img
+{
+    margin: 0 14px;
+}
+.footer-email span p,.footer-call span p{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: justified;
+    color: var(--dark-gray-color);
+}
+.footer-bottom{
+    margin: 50px 0;
+}
+.footer-bottom span{
+    border-top: 1px solid var(--dark-gray-color);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 0.03em;
+    text-align: justified;
+    color: rgba(112, 112, 112, 1);
+    padding: 16px 120px 16px 120px;
+    box-sizing: border-box;
+}
+@media(max-width:980px){
+    .footer-top nav li{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.2px;
+        text-wrap: nowrap;
+        margin: 0 10px;
+    }
+}
+@media(max-width:768px){
+    .footer{
+        background-color: var( --dark-bold-gray-color);
+        margin-top: 39px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .footer-container{
+        padding: 0;
+    }
+    .footer-top nav ul{
+        margin-top: 30px;
+    }
+    .footer-top nav li{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19.2px;
+        text-wrap: nowrap;
+        margin: 0 10px;
+    }
+    .footer-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-email{
+        margin: 0;
+    }
+    .footer-bottom span{
+        padding: 10px;
+    }
+
+}

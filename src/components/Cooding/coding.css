@@ -1,0 +1,276 @@
+.cooding-container{
+    box-sizing: border-box;
+    overflow: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.875rem 2.44rem 0 2.44rem;
+    margin-top: 1.875rem;
+}
+.cooding-text{
+    flex: 1;
+    text-align: left;
+}
+.cooding-text{
+    display: flex;
+    flex-direction: column;
+}
+.cooding-text .upper-text{
+    text-align: left;
+    width: 100%;
+}
+.upper-text h1{
+    font-family: Lato;
+    font-size: 4.375rem;
+    font-weight: 900;
+    line-height: 5.25rem;
+    letter-spacing: 0.03em;
+    text-align: left;
+    background: linear-gradient( 90.48deg, #984300 0.34%, #FD6F00 42.06%, #CA5900 90.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#we{
+    margin-top:0;
+    text-align: left;
+    font-family: Lato;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    letter-spacing: 0.03em;
+}
+#precision{
+    margin-top: 1.5rem;
+    font-family: Lato;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-wrap: nowrap;
+}
+.cooding-icons{
+    margin: 3.8125rem 0 3.8125rem 0;
+}
+.cooding-icons img{
+    width: 2.5rem;
+    margin: 1rem 1.25rem 0 0;
+}
+.cooding-buttons{
+    display: flex;
+    gap: 1.5rem;
+}
+.cooding-buttons .cooding-contact{
+    padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+    border-radius:0.5rem;
+    border: none;
+    background:linear-gradient(94.36deg, #FD6F00 3.1%, #E46400 94.54%);
+}
+.cooding-contact a{
+    font-family: Lato;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0.03em;
+    text-align: justified;
+    color: #ffffff;
+}
+.cooding-buttons .cooding-portfolio{
+    padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+    border-radius:0.5rem;
+    border: none;
+    background-color: transparent;
+    border: 2px solid var(--black-gray-color);
+}
+.cooding-portfolio a{
+    font-family: Lato;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0.03em;
+    text-align: justified;
+    color: var(--black-gray-color);
+}
+.lower-text{
+    display: flex;
+    background-color: var( --dark-bold-gray-color);
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    Padding: 1.5rem;
+    Gap: 1.875rem;
+}
+.lower-text-data{
+    border-left:  2px solid var(--black-gray-color);
+}
+.lower-text-data:nth-child(1){
+    border-left:none;
+}
+.lower-text-data span{
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.8rem;
+    letter-spacing: 0.03em;
+    text-align: justified;
+    color: var(--light-orange-color);
+}
+.lower-text-data p{
+    font-family: Lato;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0.03em;
+    text-align: justified;
+    color: var( --light-gray-color);
+}
+.lower-text-data span ,#p{
+    padding-left: 1rem;
+    text-wrap: nowrap;
+}
+/* here i am gonna styling second part of image section */
+.cooding-img{
+    flex: 1;
+}
+.cooding-img img{
+   width: 100%;
+   height: auto;
+}
+
+
+@media(max-width:980px){
+    .cooding-container{
+        max-width: 770px;
+        flex-direction: column;
+    }
+    #we{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .cooding-icons{
+        text-align: center;
+        margin: 1rem 0 3.8125rem 0;
+    }
+    .cooding-icons img{
+        width: 2.5rem;
+        margin: 1rem 1.25rem 0 0;
+    }
+    .upper-text h1{
+        text-align: center;
+    }
+    #precision{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .lower-text-data span ,#p{
+        text-wrap: wrap;
+    }
+    .lower-text-data span{
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    
+    }
+    .lower-text{
+        margin-top: 3.125rem;
+        Padding: 1rem;
+        Gap:o.9rem;
+    }
+    #p{
+        font-size: 1rem;
+        Line-height:19.2px;
+    }
+    .cooding-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.43rem;
+        width: 100%;
+    }
+    .cooding-img img{
+        align-self: center;
+        width: 70%;
+        height:auto;
+     }
+     .cooding-buttons{
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+     
+}
+@media(max-width:768px){
+    .cooding-container{
+        max-width: 384px;
+        flex-direction: column;
+        margin-top: 39px;
+    }
+    .cooding-text{
+        flex: 1;
+    }
+    .cooding-img{
+        flex: 1;
+    }
+    #we{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .cooding-icons{
+        text-align: center;
+        margin: 1rem 0 3.8125rem 0;
+    }
+    .cooding-icons img{
+        width: 2.5rem;
+        margin: 1rem 1.25rem 0 0;
+    }
+    .upper-text h1{
+        text-align: center;
+    }
+    #precision{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .lower-text-data span ,#p{
+        text-wrap: wrap;
+    }
+    .lower-text-data span{
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    
+    }
+    .lower-text{
+        margin-top: 3.125rem;
+        Padding: 1rem;
+        Gap:o.9rem;
+    }
+    #p{
+        font-size: 1rem;
+        Line-height:19.2px;
+    }
+    .cooding-img{
+        margin-top: 2.43rem;
+        width: 100%;
+    }
+    .cooding-img img{
+        width: 100%;
+        height: 100%;
+     }     
+     .cooding-buttons{
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .cooding-contact a{
+        font-family: Lato;
+        font-size: 1rem;
+        font-weight: 700;
+        text-wrap: nowrap;
+    }
+}
+
+
+

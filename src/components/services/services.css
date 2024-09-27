@@ -1,0 +1,136 @@
+/* here i am goona writing css to design the services card */
+/* Services.css */
+br{
+    display: none;
+}
+.services-container {
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.25rem;
+    align-items: center;
+    padding: 0 4.375rem 0 5rem;
+    margin-top: 5rem;
+}
+#serve{
+    margin-top: 5rem;
+    margin-bottom: 18px;
+    color: rgba(254, 254, 254, 1);
+    text-align: center;
+}
+#expert{
+    text-align: center;
+    color: rgba(112, 112, 112, 1);
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    text-align: justified;
+}
+.service-card {
+    max-width: 399.67px;
+    width: 100%;
+    height: auto;
+    border: none;
+    padding: 2.25rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    background-color: var(--dark-bold-gray-color);
+}
+
+.service-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service-card h4 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin: 1rem 0 2.5rem 0;
+    color: var(--light-orange-color);
+}
+
+.service-card p {
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1.25rem;
+    letter-spacing: 3%;
+    color: var( --black-gray-color);
+}
+
+/* here i am gonna  writing media query to make my cards responsive */
+/* temporary  */
+@media(max-width:575.98px){
+    br{
+        display: block;
+    }
+    .services-container{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: 1.14rem;
+        padding: 0 1rem;
+        text-align: center;
+        align-content: center;
+        margin-top: 39px;
+        
+    }
+    .service-card{
+        padding: 1.875rem 3.40rem;
+        max-width: 191px;
+        height: auto;
+    }
+    .service-card img{
+        margin-top: 1.875rem;
+        width:auto;
+        height: auto;
+    }
+    .service-card h4{
+        text-align: center;
+        margin:0 0 0.5rem 0;
+        /* font-size: 0.875rem; */
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+    .service-card p{
+        display: none;
+    }
+  
+  }
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .services-container{
+        margin-top: 39px;
+    }
+    br{
+        display: block;
+    }
+    /* Your styles for small devices */
+    .service-card p{
+        display: none;
+    }
+  }  
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    /* Your styles for small devices */
+    .services-container{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .service-card{
+        padding: 1.875rem 3.40rem;
+        height: auto;
+    }
+    .service-card h4{
+        margin:0 0 0.5rem 0;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .services-container{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .service-card{
+        padding: 1.875rem 3.40rem;
+        height: auto;
+    }
+}
+
+  

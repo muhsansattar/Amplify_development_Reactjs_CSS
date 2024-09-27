@@ -1,0 +1,78 @@
+:root{
+  /* here i am gonna variables of colors */
+  --dark-bold-orabge-color: #984300;
+  --light-orange-color:rgba(253, 111, 0, 1);
+  --dark-light-orange-color:#CA5900;
+  --light-light-orange-color:rgba(228, 100, 0, 1);
+  --dark-bold-gray-color:rgba(255, 255, 255, 0.04);
+  --dark-gray-color:rgba(149, 149, 149, 1);
+  --light-gray-color:rgba(223, 223, 223, 1);
+  --white-color:rgba(254, 254, 254, 1);
+  --black-gray-color:  #575757;
+  --black-color:#000;
+  --p-after-heading-color:rgba(112, 112, 112, 1);
+  --toggle-button-color:#2C2C2C;
+  --text-color-normal:rgba(198, 198, 198, 1);
+  --circle-background:rgba(39, 39, 39, 1);
+}
+/* here i am gonna making a general class for each section */
+.fixed-width{
+  max-width: 1440px;
+  background-color:var(--black-color) ;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background-color: var(--black-color);
+}
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}

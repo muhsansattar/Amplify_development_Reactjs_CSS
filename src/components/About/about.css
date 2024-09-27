@@ -1,0 +1,80 @@
+.about-contaianer{
+    max-width: 1031px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150PX;
+}
+.about-contaianer h2{
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    text-align: justified;
+    color: rgba(254, 254, 254, 1);
+    align-self: center;
+}
+.excellence{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    text-align: justified;
+    align-self: center;
+    color: rgba(254, 254, 254, 1);
+}
+.amplify-paragraph{
+    max-width:593px;
+    width: 100%;
+    gap: 100px;
+    opacity: 0px;
+    margin: auto;
+    word-break: break-all;
+}
+.amplify-paragraph p{
+    font-family: Lato;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: justified;
+    color: rgba(149, 149, 149, 1);
+}
+.amplify-paragraph p span{
+    color: var(--light-light-orange-color);
+}
+.about-contaianer button{
+    padding: 0.75rem 1.875rem 0.75rem 1.875rem;
+    gap: 10px;
+    border-radius: 8px;
+    align-self: center;
+    background-color: var(--light-orange-color);
+    border: none;
+    color:#ffffff;
+}
+.about-contaianer button a{
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: justified;
+    color: #ffffff;
+}
+@media(max-width:768px){
+    .amplify-paragraph{
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        word-break:break-all;
+    }
+    .about-contaianer{
+        margin-top: 39px;
+    }
+
+}
